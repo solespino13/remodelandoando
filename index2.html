@@ -41,37 +41,21 @@
 </header>
 
 <main>
-  <div class="slider"><!-- Este es el carrusel -->
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="https://i.pinimg.com/736x/2f/e9/2a/2fe92ad8f7d732416a015eae15dac0f0--white-bedrooms-master-bedrooms.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="http://www.laescueladedecoracion.es/uploads//2016/02/26/PH129575.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject={A61CD571-3538-4238-8428-C96A2A30C746}&trName=TF_Web_Big" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="http://www.ikea.com/ms/media/cho_room/20162/dining/20162_codi09a/20162_codi09a_01_PH129219.jpg" alt="fourth slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div><!--/slider-->
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+	        <div class="active item one"></div>
+	        <div class="item two"></div>
+	        <div class="item three"></div>
+		</div>
+	</div><!--//carousel-->
 
-  <div><!--botones-->
-          <input type="text" placeholder="¿Qué buscas?">
+  <div class="container botones-container"><!--botones-->
+    <div class="row justify-content-md-center flexCenter">
+      <div class="align-items-center">
+      
+          <input type="text" placeholder="¿Qué buscas?" class="queBuscas">
 
-          <select name="lugares">
+          <select name="lugares" class="seleccionEstados">
              <option value="1">Aguascalientes</option> 
              <option value="2">Baja California</option> 
              <option value="3">Baja California Sur</option>
@@ -106,53 +90,31 @@
              <option value="32">Zacatecas</option>
           </select>
 
-          <button type="button">Buscar</button>
+          <button type="button" class="buscar btn btn-success">Buscar</button>
+        </div><!--align items center-->
+        </div><!--row-->
         </div><!--/botones-->
 
 </main>
 
- <footer style="padding-bottom: 0;">
+ <footer>
     <div class="container">
-<!--aqui empieza el popup--> 
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">INSCRIBETE</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Gana $50,000 para tu remodelación.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">¡Inscribete ya!</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!--aqui termina -->
-
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 ">
-                <div class=" align-items-center">
-                    <a href="#">Estilos</a>
-                    <a href="#">Ideas</a>
-                    <a href="#">Chat</a>
-                    <a href="#">Blog</a>
-                    <a href="#">News Letter</a>
-                    <a href="#">¿Quienes Somos?</a>
-                </div>
+        <div class="row footer-class">
+            <div class="col-xs-12 col-sm align-items-center">
+                    <a href="#" class="footer-link">Estilos</a>
+                    <a href="#" class="footer-link">Ideas</a>
+                    <a href="#" class="footer-link">Chat</a>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Newsletter</a>
+                    <a href="#" class="footer-link">¿Quienes Somos?</a>
             </div>
            
-            <div class="col-xs-12 col-sm-4 col-md-4 col-sm-offset-2">
-                <div class="logo">Y mucho más con tu organizador de proyecto</div>
+            <div class="col-xs-12 col-sm">
+                <div class="slogan">Y mucho más con tu organizador de proyecto</div>
             </div>               
            
-        </div>
-    </div>
+        </div><!--/row-->
+    </div><!--/container-->
 </footer>
 
     <!-- Optional JavaScript -->
@@ -164,6 +126,6 @@
   $(document).ready(function() {
     $('.carousel').carousel({interval: 7000});
   });
-    </script>
+</script>
   </body>
 </html>

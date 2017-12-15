@@ -1,3 +1,73 @@
 .navbar{
 	font-style: italic;
 }
+
+.queBuscas {
+	margin: 0px 20px;
+	border-radius: 6px;
+}
+
+.seleccionEstados {
+	margin:0px 20px;
+	border-radius: 6px;
+}
+.buscar {
+	margin: 0px 20px;
+}
+
+.botones-container {
+	
+	margin-top: 200px;
+	height: 200px;
+	width: 600px;
+	background-color: rgba(0,0,0, 0.4);
+	border-radius: 6px;
+}
+
+.flexCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-class{
+	margin-top: 40px;
+}
+
+.footer-link {
+	padding: 20px 20px;
+}
+
+
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 80%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    background: url("https://i.pinimg.com/736x/2f/e9/2a/2fe92ad8f7d732416a015eae15dac0f0--white-bedrooms-master-bedrooms.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background: url("http://www.laescueladedecoracion.es/uploads//2016/02/26/PH129575.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background: url("https://www.roca.es/RocaResourceServlet/resources/getTransformation?idObject={A61CD571-3538-4238-8428-C96A2A30C746}&trName=TF_Web_Big");
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}

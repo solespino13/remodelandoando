@@ -1,1 +1,4 @@
 
+$("#sol").click(function(){
+	
+})
